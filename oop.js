@@ -82,3 +82,24 @@ const Car = {
 // console.log( Car.getDetails() )
 console.log( Car.arrowFunc() )
 */
+
+/*
+//? ARRAY DESTRUCTURING
+
+const testArray = [ 'value0', 'value1', 'value2', 'value3' ]
+
+// const var0 = testArray[0]
+// const var1 = testArray[1]
+
+//? Sıralama Önemli!
+// const [ firstItem, secondItem ] = testArray
+// console.log(firstItem, secondItem)
+
+//? RestOperator (Toplayıcı) (En sonda olmak zorunda):
+// let [ first, second, third, ...others ] = testArray
+// console.log(first, second, others)
+
+//? SpreadOperator (Dağıtıcı):
+const newArr = [ ...testArray, 'new-value', 'new-value2' ]
+console.log( newArr )
+*/
