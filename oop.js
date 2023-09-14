@@ -46,3 +46,39 @@ console.log( Car.details['engineSize'] )
 console.log( Car['details']['engineSize'] )
 console.log( Car['startEngine']() )
 */
+
+/*
+//? "THIS" KEYWORD
+
+const Car = {
+
+    brand: 'Ford',
+    model: 'Mustang',
+    year: 1967,
+    isAutoGear: true,
+    colors: ['white', 'red'],
+    details: {
+        color1: 'red',
+        color2: 'white',
+        engineSize: 4900
+    },
+    startEngine: function () {
+        return 'Motor çalıştı'
+    },
+    getDetails: function () {
+
+        // return this
+        // return this.brand + ' ' + this.model + ' ' + this.year
+        return this.startEngine()
+
+    },
+    arrowFunc: () => {
+    //? Arrow functions is globalScope. (Not working this keyword in here)
+        // return this
+        return this.brand
+    }
+}
+
+// console.log( Car.getDetails() )
+console.log( Car.arrowFunc() )
+*/
